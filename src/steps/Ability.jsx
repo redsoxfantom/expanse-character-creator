@@ -51,6 +51,7 @@ class Ability extends Component {
                     value={this.state.value}
                     onChange={this.onChange}
                 />
+                <br/>
                 <DiceButton onRoll={this.handleRandom}/>
             </div>
         );
