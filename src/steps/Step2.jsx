@@ -6,6 +6,10 @@ class Step2 extends Component {
     render(){
         return(
             <div>
+                <h2>Step 2: Abilities</h2>
+                <p>
+                    AGE System characters are defined by nine abilities. They’re scored on a numeric scale from –2 (quite poor) to 4 (truly outstanding). A score of 1 is considered average for Player Characters and other extraordinary people. 0 is average for everyday individuals, the sort of folks who avoid having adventures. Your character’s ability scores provide a useful “snapshot” of the areas where your character is outstanding, above average, poor, or just average, and you use ability scores to determine the outcome of most actions in the game via ability tests.
+                </p>
                 <Ability 
                     name="ACCURACY" 
                     description="Accuracy measures aim and precision, and measures your ability to hit targets with ranged or thrown weapons."
