@@ -18,7 +18,12 @@ class DiceButton extends Component{
             dicerolls.push(Math.floor((Math.random() * 6) + 1));
         }
 
-        this.props.onRoll(dicerolls);
+        let sum = 0
+        dicerolls.forEach(function(element) {
+            sum += element
+        }, this);
+
+        this.props.onRoll(dicerolls, sum);
     }
 
     render(){
