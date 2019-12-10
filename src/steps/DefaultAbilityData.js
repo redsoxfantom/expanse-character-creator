@@ -155,6 +155,48 @@ const DefaultAbilityData = {
                 description: "Proficiency with light close combat weapons like batons, knives, light staffs, and swords, among others."
             }
         }
+    },
+    INTELLIGENCE: {
+        value: -2,
+        focuses: {
+            Art: {
+                has: false,
+                description: "Knowledge of artistic movements, styles, artists, and works in any of the fine arts. Making art uses the Crafting focus."
+            },
+            Business: {
+                has: false,
+                description: "Knowledge of running a business as well as of the business and corporate world."
+            },
+            Cryptography: {
+                has: false,
+                description: "Creating and deciphering codes and ciphers."
+            },
+            Current_Affairs: {
+                friendlyName: "Current Affairs",
+                has: false,
+                description: "Knowledge of politics, newsworthy events, and popular culture."
+            },
+            Demolitions: {
+                has: false,
+                description: "Identifying, using, and safely handling explosives, as well as understanding their effects and detonation methods."
+            },
+            Engineering: {
+                has: false,
+                description: " Making, repairing, and maintaining technological items as well as knowledge of the principles and practicalities of their design and development."
+            },
+            Evaluation: {
+                has: false,
+                description: "Knowledge of the value of goods, works of art, and other valuables."
+            },
+            Law: {
+                has: false,
+                description: "Knowledge of codes, regulations, and different legal proceedings of all levels of the judiciary and law enforcement."
+            },
+            Medicine: {
+                has: false,
+                description: ""
+            }
+        }
     }
 }
 
