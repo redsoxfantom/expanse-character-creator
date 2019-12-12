@@ -12,11 +12,15 @@ class Step3 extends Component {
             }
         } else {
             this.state = {
-                origin: "BELTER"
+                origin: ""
             }
         }
 
         this.descriptions = {
+            "" : {
+                description: "",
+                traits: []
+            },
             "BELTER" : {
                 description: "You were born and raised in the Black, on a station or ship, and have lived most, if not all, of your life out in the Belt or beyond. Separated from death by nothing more than basic support systems your whole life, you have learned to be cautious and aware of your environment.",
                 traits: [
@@ -42,6 +46,12 @@ class Step3 extends Component {
         }
         this.onRoll = this.onRoll.bind(this);
         this.getStepData = this.getStepData.bind(this);
+        this.onChange = this.onChange.bind(this);
+        this.updateFocus = this.updateFocus.bind(this);
+    }
+
+    updateFocus(newOrigin) {
+        this.props.stepData["Step2"].DEXTERITY.focuses.Free_Fall.has = (newOrigin === "BELTER")
     }
 
     getStepName() {
@@ -56,12 +66,22 @@ class Step3 extends Component {
 
     onRoll(result) {
         result = result[0]
-        if(result == 1){this.setState({origin: "BELTER"})}
-        if(result == 2){this.setState({origin: "BELTER"})}
-        if(result == 3){this.setState({origin: "EARTHER"})}
-        if(result == 4){this.setState({origin: "EARTHER"})}
-        if(result == 5){this.setState({origin: "MARTIAN"})}
-        if(result == 6){this.setState({origin: "MARTIAN"})}
+        let newOrigin;
+
+        if(result == 1){newOrigin = "BELTER"}
+        if(result == 2){newOrigin = "BELTER"}
+        if(result == 3){newOrigin = "EARTHER"}
+        if(result == 4){newOrigin = "EARTHER"}
+        if(result == 5){newOrigin = "MARTIAN"}
+        if(result == 6){newOrigin = "MARTIAN"}
+
+        this.setState({origin: newOrigin});
+        this.updateFocus(newOrigin)
+    }
+
+    onChange(event) {
+        this.setState({origin: event.target.value})
+        this.updateFocus(event.target.value)
     }
 
     render() {
@@ -71,7 +91,8 @@ class Step3 extends Component {
                 <p>
                     As humanity has spread throughout the System, where you are from has increasingly had an effect on who you are. There are people for whom Earth is just a distant story they’ve heard about and seen on screens, who have never experienced being outside without a vac suit. Consider and choose your character’s origin. 
                 </p>
-                <select value={this.state.origin} onChange={(event)=>{this.setState({origin: event.target.value})}}>
+                <select value={this.state.origin} onChange={this.onChange}>
+                    <option value=""></option>
                     <option value="BELTER">BELTER</option>
                     <option value="EARTHER">EARTHER</option>
                     <option value="MARTIAN">MARTIAN</option>

@@ -194,7 +194,115 @@ const DefaultAbilityData = {
             },
             Medicine: {
                 has: false,
-                description: ""
+                description: "Tending to the sick and injured, and understanding medical and anatomical knowledge."
+            },
+            Navigation: {
+                has: false,
+                description: "Planning and following a route from one place to another, interpreting maps and cartographic data, and figuring out where you are."
+            },
+            Research: {
+                has: false,
+                description: "Conducting a systematic search for information, usually using records, archives, and books."
+            },
+            Science: {
+                has: false,
+                description: "Knowledge of an organized field of study and the ability to understand things related to it. Examples of Science focuses include Anthropology, Astronomy, Botany, Biology, Chemistry, Economics, Genetics, History, Planetary or 'Earth' Sciences, Physics, Psychology, and Theology, but you can choose another scientific field, if you wish"
+            },
+            Security: {
+                has: false,
+                description: "Knowledge of different security devices, systems, protocols, and personnel."
+            },
+            Tactics: {
+                has: false,
+                description: "Knowledge of strategy, tactics, and famous applications thereof."
+            },
+            Technology: {
+                has: false,
+                description: "Knowledge of the design and operation of technology, particularly computers, which are incorporated into nearly all technological items in The Expanse."
+            }
+        }
+    },
+    PERCEPTION: {
+        value: -2,
+        focuses: {
+            Empathy: {
+                has: false,
+                description: "Picking up on and interpreting the feelings and emotions of others."
+            },
+            Hearing: {
+                has: false,
+                description: "Perceiving using your auditory sense."
+            },
+            Intuition: {
+                has: false,
+                description: "Having a 'gut feeling' about certain things you can't otherwise sense."
+            },
+            Searching: {
+                has: false,
+                description: "Finding things that are hidden or obscured, such as hidden compartments."
+            },
+            Seeing: {
+                has: false,
+                description: "Perceiving using your visual sense."
+            },
+            Smelling: {
+                has: false,
+                description: "Perceiving using your olfactory sense."
+            },
+            Survival: {
+                has: false,
+                description: "Practical skills of wilderness survival."
+            },
+            Tasting: {
+                has: false,
+                description: "Perceiving using your gustatory sense."
+            },
+            Touching: {
+                has: false,
+                description: "Perceiving using your tactile sense."
+            },
+            Tracking: {
+                has: false,
+                description: "Following tracks and other signs of passage."
+            }
+        }
+    },
+    STRENGTH: {
+        value: -2,
+        focuses: {
+            Climbing: {
+                has: false,
+                description: "Scaling walls and other vertical obstacles."
+            },
+            Intimidation: {
+                has: false,
+                description: "Overawing others with your physical presence and threats."
+            },
+            Jumping: {
+                has: false,
+                description: "Making standing or running jumps."
+            },
+            Might: {
+                has: false,
+                description: "Feats of raw power, such as lifting or holding up heavy objects."
+            }
+        }
+    },
+    WILLPOWER: {
+        value: -2,
+        focuses: {
+            Courage: {
+                has: false,
+                description: "Overcoming fear in the face of adversity."
+            },
+            Faith: {
+                has: false,
+                description: "Deriving inner strength through spiritual or moral belief."
+            },
+            Self_Descipline: {
+                friendlyName: "Self-Descipline",
+                has: false,
+                description: "Focusing your mental energy or controlling your impulses and emotions."
             }
         }
     }

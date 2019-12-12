@@ -10,11 +10,12 @@ class SocialClass extends Component {
             this.state = props.stepData["Step4"]
         } else {
             this.state = {
-                selectedClass: "OUTSIDER"
+                selectedClass: ""
             }
         }
 
         this.descriptions = {
+            "":"",
             "OUTSIDER" : "More of a non-social class, outsiders tend to be outcasts, criminals, or non-conformists who can’t or won’t live according to society’s customs. They often lack access to things other people take for granted and learn to get by on their own, sometimes forming their own support networks and structures outside of those of mainstream society. Some outsiders reject the mainstream by choice, but in many cases, outsiders are pushed out by society’s biases.",
             "LOWER CLASS" : "Hard, usually physical, labor and precarious employment tend to rule the lives of lower class characters. Still, that work is often all that separates them from becoming outsiders, so they cling to it. Lower class characters often depend on family and friends to help keep them out of utter poverty. They might live in failing industrial areas, inner city slums, or hardscrabble farms. In all cases, they make do with what is available and find ways to stretch out resources until the next payday or job comes along.",
             "MIDDLE CLASS" : "A measure of comfort and security comes with the middle class. A steady job, often skilled labor or “white collar,” supplies the means to afford a few luxuries or non-essentials. Middle class characters might start off as a bit insular. They often separate themselves from the struggles of the lower social classes, focusing on the climb towards upper class status. Sometimes that climb leads to a slip. They tumble down to the lower class or even become outsiders. Some settle for stability instead, and prefer not to rock the boat.",
@@ -78,6 +79,7 @@ class SocialClass extends Component {
         return(
             <div>
                 <select value={this.state.selectedClass} onChange={this.classChanged}>
+                    <option value=""></option>
                     <option value="OUTSIDER">OUTSIDER</option>
                     <option value="LOWER CLASS">LOWER CLASS</option>
                     <option value="MIDDLE CLASS">MIDDLE CLASS</option>

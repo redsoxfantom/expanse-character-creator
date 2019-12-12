@@ -27,7 +27,7 @@ class Step4 extends Component {
     render() {
         return(
             <div>
-                <h3>Step 4: Background</h3>
+                <h2>Step 4: Background</h2>
                 <p>
                     Characters do not spring from nowhere, fully formed. Their stories start somewhere, and they had a life and experiences prior to the start of the story being told around the game table. This is the character’s background.
                 </p>
