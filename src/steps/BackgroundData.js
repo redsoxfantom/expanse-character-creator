@@ -341,6 +341,242 @@ const BackgroundData = {
                 type: "SINGLE_FOCUS",
                 ability: "COMMUNICATION",
                 focus: "Persuasion"
+            },
+            5: {
+                type: "SINGLE_FOCUS",
+                ability: "INTELLIGENCE",
+                focus: "Evaluation"
+            },
+            6: {
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Empathy"
+            },
+            7: {
+                type: "ABILITY_INCREASE",
+                ability: "INTELLIGENCE"
+            },
+            8: {
+                type: "ABILITY_INCREASE",
+                ability: "INTELLIGENCE"
+            },
+            9: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Expression"
+            },
+            10: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Leadership"
+            },
+            11: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Leadership"
+            },
+            12: {
+                type: "ABILITY_INCREASE",
+                ability: "ACCURACY"
+            }
+        }
+    },
+    Cosmopolitan: {
+        description: "You were raised in a cosmopolitan environment: a big city, or even a series of great cities, where people from all over the world came and mixed. You were exposed to some of the best—and, potentially, the worst—of humanity and human achievement.",
+        social_class: "UPPER CLASS",
+        rolls: [
+            5,
+            6
+        ],
+        ability: "INTELLIGENCE",
+        focus: {
+            type: "PICK_ONE",
+            options: [
+                {
+                    ability: "COMMUNICATIONS",
+                    focus: "Etiquette"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Current_Affairs"
+                }
+            ]
+        },
+        talent: [
+            "Knowledge",
+            "Observation"
+        ],
+        benefits: {
+            2: {
+                type: "ABILITY_INCREASE",
+                ability: "PERCEPTION"
+            },
+            3: {
+                type: "PICK_ONE",
+                options: [
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Art"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Business"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Cryptography"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Current_Affairs"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Demolitions"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Engineering"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Evaluation"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Law"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Medicine"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Navigation"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Research"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Science"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Security"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Tactics"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Technology"
+                    }
+                ]
+            },
+            4: {
+                type: "PICK_ONE",
+                options: [
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Art"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Business"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Cryptography"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Current_Affairs"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Demolitions"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Engineering"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Evaluation"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Law"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Medicine"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Navigation"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Research"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Science"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Security"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Tactics"
+                    },
+                    {
+                        ability: "INTELLIGENCE",
+                        focus: "Technology"
+                    }
+                ]
+            },
+            5: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Persuasion"
+            },
+            6: {
+                type: "SINGLE_FOCUS",
+                ability: "INTELLIGENCE",
+                focus: "Art"
+            },
+            7: {
+                type: "ABILITY_INCREASE",
+                ability: "COMMUNICATION"
+            },
+            8: {
+                type: "ABILITY_INCREASE",
+                ability: "COMMUNICATION"
+            },
+            9: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Bargaining"
+            },
+            10: {
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Seeing"
+            },
+            11: {
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Seeing"
+            },
+            12: {
+                type: "ABILITY_INCREASE",
+                ability: "WILLPOWER"
             }
         }
     }
