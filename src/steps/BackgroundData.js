@@ -165,8 +165,183 @@ const BackgroundData = {
                 {
                     ability: "INTELLIGENCE",
                     focus: "Business"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Cryptography"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Current_Affairs"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Demolitions"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Engineering"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Evaluation"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Law"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Medicine"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Navigation"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Research"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Science"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Security"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Tactics"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Technology"
                 }
             ]
+        },
+        talent: [
+            "Carousing",
+            "Performance"
+        ],
+        benefits: {
+            2: {
+                type: "ABILITY_INCREASE",
+                ability: "DEXTERITY"
+            },
+            3: {
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Empathy"
+            },
+            4: {
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Empathy"
+            },
+            5: {
+                type: "PICK_ONE",
+                options: [
+                    {
+                        ability: "WILLPOWER",
+                        focus: "Courage"
+                    },
+                    {
+                        ability: "WILLPOWER",
+                        focus: "Faith"
+                    }
+                ]
+            },
+            6: {
+                type: "PICK_ONE",
+                options: [
+                    {
+                        ability: "WILLPOWER",
+                        focus: "Courage"
+                    },
+                    {
+                        ability: "WILLPOWER",
+                        focus: "Faith"
+                    }
+                ]
+            },
+            7: {
+                type: "ABILITY_INCREASE",
+                ability: "CONSTITUTION"
+            },
+            8: {
+                type: "ABILITY_INCREASE",
+                ability: "CONSTITUTION"
+            },
+            9: {
+                type: "PICK_ONE",
+                options: [
+                    {
+                        ability: "DEXTERITY",
+                        focus: "Acrobatics"
+                    },
+                    {
+                        ability: "Dexterity",
+                        focus: "Free_Fall"
+                    }
+                ]
+            },
+            10: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Persuasion"
+            },
+            11: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Persuasion"
+            },
+            12: {
+                type: "ABILITY_INCREASE",
+                ability: "PERCEPTION"
+            }
+        }
+    },
+    Corporate: {
+        description: "Your early life was tied up in corporate culture, most likely due to family members who built their lives around a company in some fashion. Your family might be influential stockholders or include powerful executives, and they may well have expected you to follow their example—whether you did or not.",
+        social_class: "UPPER CLASS",
+        rolls: [
+            3,
+            4
+        ],
+        ability: "COMMUNICATION",
+        focus: {
+            type: "PICK_ONE",
+            options: [
+                {
+                    ability: "COMMUNICATION",
+                    focus: "Bargaining"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Business"
+                }
+            ]
+        },
+        talent: [
+            "Contacts",
+            "Intrigue"
+        ],
+        benefits: {
+            2: {
+                type: "ABILITY_INCREASE",
+                ability: "PERCEPTION"
+            },
+            3: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Persuasion"
+            },
+            4: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Persuasion"
+            }
         }
     }
 }
