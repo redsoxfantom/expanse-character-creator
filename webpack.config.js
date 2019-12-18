@@ -2,8 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.js",
-  mode: "development",
   module: {
     rules: [
       {
@@ -21,7 +19,7 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "public/javascripts"),
-    publicPath: "/public/javascripts/",
-    filename: "bundle.js"
+    filename: "bundle.js",
+    libraryTarget: 'CommonJs'
   }
 };
