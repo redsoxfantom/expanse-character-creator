@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode development src/index.js",
-    "test": "webpack --mode development src/test.js && node test.js",
+    "test": "webpack --mode development --output-library testlib --output-library-target commonjs src/test.js && node test.js",
     "start": "node ./bin/www"
   },
   "dependencies": {

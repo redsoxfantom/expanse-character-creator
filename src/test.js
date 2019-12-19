@@ -1,8 +1,8 @@
-const BackgroundData = require('./steps/BackgroundData.js')
-const DefaultAbilityData = require('./steps/DefaultAbilityData.js')
+//import BackgroundData from './steps/BackgroundData.js'
+//import DefaultAbilityData from './steps/DefaultAbilityData.js'
 
 function run(){
-    console.log("Hello World")
+    return true
 }
 
-module.exports = run
+export default run
