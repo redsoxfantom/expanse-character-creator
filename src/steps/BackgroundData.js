@@ -393,7 +393,7 @@ const BackgroundData = {
             type: "PICK_ONE",
             options: [
                 {
-                    ability: "COMMUNICATIONS",
+                    ability: "COMMUNICATION",
                     focus: "Etiquette"
                 },
                 {
@@ -412,134 +412,12 @@ const BackgroundData = {
                 ability: "PERCEPTION"
             },
             3: {
-                type: "PICK_ONE",
-                options: [
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Art"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Business"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Cryptography"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Current_Affairs"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Demolitions"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Engineering"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Evaluation"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Law"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Medicine"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Navigation"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Research"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Science"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Security"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Tactics"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Technology"
-                    }
-                ]
+                type: "ANY_FOCUS",
+                ability: "INTELLIGENCE"
             },
             4: {
-                type: "PICK_ONE",
-                options: [
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Art"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Business"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Cryptography"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Current_Affairs"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Demolitions"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Engineering"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Evaluation"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Law"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Medicine"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Navigation"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Research"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Science"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Security"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Tactics"
-                    },
-                    {
-                        ability: "INTELLIGENCE",
-                        focus: "Technology"
-                    }
-                ]
+                type: "ANY_FOCUS",
+                ability: "INTELLIGENCE"
             },
             5: {
                 type: "SINGLE_FOCUS",
