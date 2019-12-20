@@ -12,7 +12,7 @@ const DefaultAbilityData = {
             },
             Pistols: {
                 has: false,
-                description: " Proficiency with single-grip, short-barrel ballistic weapons."
+                description: "Proficiency with single-grip, short-barrel ballistic weapons."
             },
             Rifles: {
                 has: false,
