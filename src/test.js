@@ -95,7 +95,7 @@ function checkSingleFocus(opt) {
     const abilityFocuses = DefaultAbilityData[opt.ability].focuses
     if(!abilityFocuses.hasOwnProperty(opt.focus)) {
         console.log("SINGLE_FOCUS option ability.focus",opt.ability,opt.focus,"not defined in ability data")
-        optionsValid = false
+        return false
     }
 
     return true
@@ -142,12 +142,15 @@ function checkBenefits(benefits) {
             return false
     }
 
+    var optionsValid = true
     for (const benefit in benefits) {
         const element = benefits[benefit];
-        checkOptions(element)
+        if(!checkOptions(element)) {
+            optionsValid = false
+        }
     }
 
-    return true
+    return optionsValid
 }
 
 function run(){
