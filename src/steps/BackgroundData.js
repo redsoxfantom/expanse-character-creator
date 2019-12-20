@@ -623,6 +623,166 @@ const BackgroundData = {
                 ability: "CONSTITUTION"
             }
         }
+    },
+    Outcast: {
+        description:"Fate singled you out for the life of an outcast on the fringes of society. You might have a criminal background that makes it impossible to find decent work and true respect, or you might belong to a minority group your society rejects. On Earth, you might have been an unlicensed and unregistered birth, a literal non-person. Whatever the case, you had to learn how to survive outside of the safety and structures most people rely upon.",
+        social_class: "OUTSIDER",
+        rolls: [
+            5,
+            6
+        ],
+        ability: "WILLPOWER",
+        focus: {
+            type: "PICK_ONE",
+            options: [
+                {
+                    ability: "COMMUNICATION",
+                    focus: "Deception"
+                },
+                {
+                    ability: "DEXTERITY",
+                    focus: "Stealth"
+                }
+            ]
+        },
+        talent: [
+            "Fringer",
+            "Misdirection"
+        ],
+        benefits: {
+            2: {
+                type: "ABILITY_INCREASE",
+                ability: "PERCEPTION"
+            },
+            3: {
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Seeing"
+            },
+            4: {
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Seeing"
+            },
+            5: {
+                type: "SINGLE_FOCUS",
+                ability: "FIGHTING",
+                focus: "Light_Weapons"
+            },
+            6: {
+                type: "SINGLE_FOCUS",
+                ability: "INTELLIGENCE",
+                focus: "Technology"
+            },
+            7: {
+                type: "ABILITY_INCREASE",
+                ability: "CONSTITUTION"
+            },
+            8: {
+                type: "ABILITY_INCREASE",
+                ability: "CONSTITUTION"
+            },
+            9: {
+                type: "SINGLE_FOCUS",
+                ability: "DEXTERITY",
+                focus: "Slight_Of_Hand"
+            },
+            10: {
+                type: "SINGLE_FOCUS",
+                ability: "WILLPOWER",
+                focus: "Courage"
+            },
+            11: {
+                type: "SINGLE_FOCUS",
+                ability: "WILLPOWER",
+                focus: "Courage"
+            },
+            12: {
+                type: "ABILITY_INCREASE",
+                ability: "COMMUNICATION"
+            }
+        }
+    },
+    Laborer: {
+        description: "Your family is used to hard, physical work—and so are you. Generations have worked the factory line, the mines, the assembly line, or the dockyards. You might be looking to move on and move up from there, or stick with it, or something might have upended the life you once knew, forcing you to move on.",
+        social_class: "LOWER CLASS",
+        rolls: [
+            3,
+            4
+        ],
+        ability: "CONSTITUTION",
+        focus: {
+            type: "PICK_ONE",
+            options: [
+                {
+                    ability: "DEXTERITY",
+                    focus: "Crafting"
+                },
+                {
+                    ability: "STRENGTH",
+                    focus: "Might"
+                }
+            ]
+        },
+        talent:[
+            "Carousing",
+            "Overwhelm_Style",
+            "Self_Defense_Style",
+            "Striking_Style",
+        ],
+        benefits: {
+            2: {
+                type: "ABILITY_INCREASE",
+                ability: "FIGHTING"
+            },
+            3: {
+                type: "SINGLE_FOCUS",
+                ability: "FIGHTING",
+                focus: "Brawling"
+            },
+            4: {
+                type: "SINGLE_FOCUS",
+                ability: "FIGHTING",
+                focus: "Brawling"
+            },
+            5: {
+                type: "SINGLE_FOCUS",
+                ability: "INTELLIGENCE",
+                focus: "Engineering"
+            },
+            6: {
+                type: "SINGLE_FOCUS",
+                ability: "WILLPOWER",
+                focus: "Self_Descipline"
+            },
+            7: {
+                type: "ABILITY_INCREASE",
+                ability: "STRENGTH"
+            },
+            8: {
+                type: "ABILITY_INCREASE",
+                ability: "STRENGTH"
+            },
+            9: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Gambling"
+            },
+            10: {
+                type: "SINGLE_FOCUS",
+                ability: "CONSTITUTION",
+                focus: "Stamina"
+            },
+            11: {
+                type: "SINGLE_FOCUS",
+                ability: "CONSTITUTION",
+                focus: "Stamina"
+            },
+            12: {
+                type: "ABILITY_INCREASE",
+                ability: "DEXTERITY"
+            },
+        }
     }
 }
 
