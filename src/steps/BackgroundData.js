@@ -281,7 +281,7 @@ const BackgroundData = {
                         focus: "Acrobatics"
                     },
                     {
-                        ability: "Dexterity",
+                        ability: "DEXTERITY",
                         focus: "Free_Fall"
                     }
                 ]

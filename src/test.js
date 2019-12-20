@@ -55,8 +55,54 @@ function checkAnyFocus(opt) {
     return true
 }
 
+function checkAbilityIncrease(opt) {
+    if(!opt.hasOwnProperty("ability")) {
+        console.log("ABILITY_INCREASE option has no ability field")
+        return false
+    }
+    if(!DefaultAbilityData.hasOwnProperty(opt.ability)) {
+        console.log("ABILITY_INCREASE option ability",opt.ability,"not defined in ability data")
+        return false
+    }
+    return true
+}
+
+function checkIncome(opt) {
+    if(!opt.hasOwnProperty("income")) {
+        console.log("INCOME option has no income field")
+        return false
+    }
+    if(isNaN(opt.income)) {
+        console.log("INCOME amount must be a number. Currently:",opt.income)
+        return false
+    }
+    return true
+}
+
+function checkSingleFocus(opt) {
+    if(!opt.hasOwnProperty("ability")) {
+        console.log("SINGLE_FOCUS option has no ability field")
+        return false
+    }
+    if(!opt.hasOwnProperty("focus")) {
+        console.log("SINGLE_FOCUS option has no focus field")
+        return false
+    }
+    if(!DefaultAbilityData.hasOwnProperty(opt.ability)) {
+        console.log("SINGLE_FOCUS option ability",opt.ability,"not defined in ability data")
+        return false
+    }
+    const abilityFocuses = DefaultAbilityData[opt.ability].focuses
+    if(!abilityFocuses.hasOwnProperty(opt.focus)) {
+        console.log("SINGLE_FOCUS option ability.focus",opt.ability,opt.focus,"not defined in ability data")
+        optionsValid = false
+    }
+
+    return true
+}
+
 function checkOptions(opt) {
-    if(!["PICK_ONE","ANY_FOCUS"].includes(opt.type)) {
+    if(!["PICK_ONE","ANY_FOCUS","ABILITY_INCREASE","INCOME","SINGLE_FOCUS"].includes(opt.type)) {
         console.log("Options type",opt.type,"not valid")
         return false
     }
@@ -65,7 +111,43 @@ function checkOptions(opt) {
             return checkPickOne(opt)
         case "ANY_FOCUS":
             return checkAnyFocus(opt)
+        case "ABILITY_INCREASE":
+            return checkAbilityIncrease(opt)
+        case "INCOME":
+            return checkIncome(opt)
+        case "SINGLE_FOCUS":
+            return checkSingleFocus(opt)
     }
+    return false
+}
+
+function checkTalents(talent) {
+    // TODO: Implement talent checking
+    return true;
+}
+
+function checkBenefits(benefits) {
+    if(!benefits.hasOwnProperty("2") ||
+        !benefits.hasOwnProperty("3") ||
+        !benefits.hasOwnProperty("4") ||
+        !benefits.hasOwnProperty("5") ||
+        !benefits.hasOwnProperty("6") ||
+        !benefits.hasOwnProperty("7") ||
+        !benefits.hasOwnProperty("8") ||
+        !benefits.hasOwnProperty("9") ||
+        !benefits.hasOwnProperty("10") ||
+        !benefits.hasOwnProperty("11") ||
+        !benefits.hasOwnProperty("12")) {
+            console.log("Benefits does not have all needed properties")
+            return false
+    }
+
+    for (const benefit in benefits) {
+        const element = benefits[benefit];
+        checkOptions(element)
+    }
+
+    return true
 }
 
 function run(){
@@ -124,6 +206,16 @@ function run(){
         var bkndFocus = background.focus
         if(!checkOptions(bkndFocus)) {
             console.log("Background focus not valid")
+            alltestpassed = false
+        }
+        var talents = background.talent
+        if(!checkTalents(talents)) {
+            console.log("Background talents list not valid")
+            alltestpassed = false
+        }
+        var benefits = background.benefits
+        if(!checkBenefits(benefits)) {
+            console.log("Background benefits list not valid")
             alltestpassed = false
         }
     }
