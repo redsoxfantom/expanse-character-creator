@@ -457,6 +457,172 @@ const BackgroundData = {
                 ability: "WILLPOWER"
             }
         }
+    },
+    Exile:{
+        description: "You might have lived a very different life were it not for some event that drove you from society. Feel free to roll again on the Social Class and Background tables to get a glimpse of what your former life was. Whatever the case, you (and possibly your family) were exiled by war, disaster, disgrace, or some other misfortune, forced to start over with virtually nothing.",
+        social_class: "OUTSIDER",
+        rolls: [
+            3,
+            4
+        ],
+        ability: "CONSTITUTION",
+        focus: {
+            type: "PICK_ONE",
+            options: [
+                {
+                    ability: "FIGHTING",
+                    focus: "Brawling"
+                },
+                {
+                    ability: "WILLPOWER",
+                    focus: "Self_Descipline"
+                }
+            ]
+        },
+        talent:[
+            "Affluent",
+            "Fringer"
+        ],
+        benefits: {
+            2: {
+                type: "ABILITY_INCREASE",
+                ability: "FIGHTING"
+            },
+            3: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Bargaining"
+            },
+            4: {
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Bargaining"
+            },
+            5: {
+                type: "SINGLE_FOCUS",
+                ability: "DEXTERITY",
+                focus: "Stealth"
+            },
+            6: {
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Searching"
+            },
+            7: {
+                type: "ABILITY_INCREASE",
+                ability: "PERCEPTION"
+            },
+            8: {
+                type: "ABILITY_INCREASE",
+                ability: "PERCEPTION"
+            },
+            9: {
+                type: "SINGLE_FOCUS",
+                ability: "ACCURACY",
+                focus: "Pistols"
+            },
+            10: {
+                type: "SINGLE_FOCUS",
+                ability: "DEXTERITY",
+                focus: "Driving"
+            },
+            11: {
+                type: "SINGLE_FOCUS",
+                ability: "DEXTERITY",
+                focus: "Driving"
+            },
+            12: {
+                type: "ABILITY_INCREASE",
+                ability: "WILLPOWER"
+            }
+        }
+    },
+    Military:{
+        description: "You grew up as a military brat. You were either a dependent with family members in military service, or you lived close by or on a military installation. You’re familiar with military culture and picked up a thing or two from it along the way.",
+        social_class: "LOWER CLASS",
+        rolls: [
+            1,
+            2
+        ],
+        ability: "FIGHTING",
+        focus: {
+            type: "PICK_ONE",
+            options: [
+                {
+                    ability: "ACCURACY",
+                    focus: "Pistols"
+                },
+                {
+                    ability: "INTELLIGENCE",
+                    focus: "Tactics"
+                }
+            ]
+        },
+        talent: [
+            "Dual_Weapon_Style",
+            "Overwhelm_Style",
+            "Pistol_Style",
+            "Rifle_Style",
+            "Self_Defense_Style",
+            "Single_Weapon_Style",
+            "Striking_Style",
+            "Thrown_Weapon_Style",
+            "Two_Handed_Style",
+            "Observation"
+        ],
+        benefits: {
+            2:{
+                type: "ABILITY_INCREASE",
+                ability: "WILLPOWER"
+            },
+            3:{
+                type: "SINGLE_FOCUS",
+                ability: "ACCURACY",
+                focus: "Rifles"
+            },
+            4:{
+                type: "SINGLE_FOCUS",
+                ability: "ACCURACY",
+                focus: "Rifles"
+            },
+            5:{
+                type: "SINGLE_FOCUS",
+                ability: "COMMUNICATION",
+                focus: "Leadership"
+            },
+            6:{
+                type: "SINGLE_FOCUS",
+                ability: "INTELLIGENCE",
+                focus: "Security"
+            },
+            7:{
+                type: "ABILITY_INCREASE",
+                ability: "STRENGTH"
+            },
+            8:{
+                type: "ABILITY_INCREASE",
+                ability: "STRENGTH"
+            },
+            9:{
+                type: "SINGLE_FOCUS",
+                ability: "PERCEPTION",
+                focus: "Searching"
+            },
+            10:{
+                type: "SINGLE_FOCUS",
+                ability: "FIGHTING",
+                focus: "Brawling"
+            },
+            11:{
+                type: "SINGLE_FOCUS",
+                ability: "FIGHTING",
+                focus: "Brawling"
+            },
+            12: {
+                type: "ABILITY_INCREASE",
+                ability: "CONSTITUTION"
+            }
+        }
     }
 }
 
