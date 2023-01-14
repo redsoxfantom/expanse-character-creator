@@ -16,7 +16,7 @@
     "morgan": "~1.9.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
